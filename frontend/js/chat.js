@@ -20,6 +20,7 @@ function connectToChat(userName) {
         });
     });
 }
+//
 //.
 function sendMsg(from, text) {
     stompClient.send("/app/chat/" + selectedUser, {}, JSON.stringify({
